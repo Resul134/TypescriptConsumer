@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>My First REST</title>
+  <link rel="stylesheet" type="text/css" href="bundle.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+</head>
+
+<body>
+  <h2>REST</h2>  
+  <div class="container">
+
+    <div class="container">
+      <div class="col-sm" style="margin-left: -200px;">
+          <h1 class="badge badge-info" style="font-size: 30px;">Rest service</h1>
+          <h2 style="color: brown;">Show all meassurements</h2>
+          <button id="getAllButton" class="btn btn-primary">Get all</button>
+          <button id="resetButton" class="btn btn-danger">reset</button>  
+          <div id="getAll" class="jumbotron"></div>
+  
+  
+          <h2 style="margin-top: 50px; color: brown;">Get one meassurement</h2>
+          <input id="getoneInput" placeholder="Type an ID">
+          <button id="getoneButton" class="btn btn-primary">Get one</button>
+          <div id="getOne" style="margin-left: -30px;"></div>
+  
+          <h2 style="margin-top: 30px; color: brown;">Add a meassurement to the list</h2>
+          <input id="addPressure" placeholder="Pressure">
+          <br>
+          <input id="addHumidity" placeholder="Humidity" style="margin-top: 10px;">
+          <br>
+          <input id="addTemp" placeholder="Temperature" style="margin-top: 10px;">
+          <br>
+          <button id="addButton"class="btn btn-primary">Add meassurement</button>
+          <div id="postOutput"></div>
+  
+  
+          <h2 style="margin-top: 30px; color: brown;">Remove a meassurement</h2>
+          <input id="deleteID" placeholder="Type an ID">
+          <button id="deleteButton" class="btn btn-primary">Remove</button>
+          <div id="deletedMeasurementOutput"></div>
+
+  </div>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="bundle.js"></script>
+</body>
+</html>
